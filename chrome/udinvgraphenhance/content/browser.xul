@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet href="chrome://udinvgraphenhance/skin/skin.css" type="text/css"?>
+<overlay xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul" id="udinvgraphenhance-overlay">
+<script type="application/x-javascript" src="chrome://udinvgraphenhance/content/options.js"></script>
+<script type="application/x-javascript" src="chrome://udinvgraphenhance/content/javascript.js"></script>
+
+<toolbarpalette id="BrowserToolbarPalette">
+	<toolbarbutton id="udmainmenu" type="menu" container="true">
+	<menupopup>
+		<menuitem id="urbandeadrefresh" label="Refresh" tooltiptext="Update UD screen" oncommand="urbandead_pagerefresh()"/>
+		<menu id="udmenu" label="Game Menu">
+			<menupopup>
+				<menuitem id="gaiecurracc" label="Current Account" oncommand="urbandead_LoadURL('http://www.urbandead.com/map.cgi')"/>
+				<menuitem id="urbandeadgamenews" label="Game News" oncommand="urbandead_LoadURL('http://www.urbandead.com/news.html')"/>
+				<menuitem id="urbandeaddonate" label="Donate" oncommand="urbandead_LoadURL('http://www.urbandead.com/donate.html')"/>
+				<menuitem id="urbandeadstats" label="Game Statistics" oncommand="urbandead_LoadURL('http://urbandead.com/stats.html')"/>
+			</menupopup>
+		</menu>
+		<menu id="udrevivemenu" label="Request Revive">
+			<menupopup>
+				<menuitem id="urbandeaddem" label="Make a [DEM] Request" tooltiptext="Malton wide revives managed by the Department of Emergency Management [DEM]. Just give UD link and location." oncommand="urbandead_LoadURL('http://ud-malton.info/revive_requests.cgi?State=Add+Request')"/>
+				<menuitem id="urbandeadcdf" label="Make a [CDF] Request" tooltiptext="Good chances of getting a revive if near one of the sponsored points. Just give UD link and location." oncommand="urbandead_LoadURL('http://cdf.aypok.co.uk/revive_points/')"/>
+				<menuitem id="urbandeadudh" label="[UDH Forums] Revivification Request" tooltip="Read Announcement before posting!" oncommand="urbandead_LoadURL('http://ud-forums.com/phpBB2/viewforum.php?f=9')"/>
+				<menuitem id="urbandeadprevive" label="Find public revive" tooltiptext="A list of locations that you may get revived listed on the wiki." oncommand="urbandead_LoadURL('http://wiki.urbandead.com/index.php/Revive_point#Map')"/>
+			</menupopup>
+		</menu>
+		<menuitem id="udroguesgallery" label="Rogues Gallery" tooltiptext="PKer Database" oncommand="urbandead_LoadURL(' http://ud-malton.info/PK_list.cgi')"/>
+		<menuseparator/>
+		<menuitem id="gaiepref" label="Toolbar Preferences" oncommand="udtoolbar_prefs();"/>
+	</menupopup>
+</toolbarbutton>
+
+<toolbarbutton id="udforum" type="menu" container="true">
+	<menupopup>
+		<menu id="brainstock" label="Brainstock Forum">
+           		<menupopup>
+				<menuitem id="chat" label="General Chat" tooltiptext="General UD chat and PK/Bounty lists" oncommand="urbandead_LoadURL(' http://s14.invisionfree.com/Brainstock/index.php?showforum=2')"/>
+				<menuitem id="pkreport" label="PK Reporting" tooltiptext="Report PKers to the Rogues Gallery" oncommand="urbandead_LoadURL(' http://z14.invisionfree.com/Brainstock/index.php?showtopic=2509')"/>
+				<menuitem id="roleplay" label="Young Husband Arms" tooltiptext="UD RP Forum" oncommand="urbandead_LoadURL(' http://s14.invisionfree.com/Brainstock/index.php?showforum=71')"/>
+				<menuitem id="human" label="Human Groups" tooltiptext="Human groups" oncommand="urbandead_LoadURL(' http://s14.invisionfree.com/Brainstock/index.php?showforum=4')"/>
+				<menuitem id="zombie" label="Zombie Groups" tooltiptext="Zombie Groups" oncommand="urbandead_LoadURL(' http://s14.invisionfree.com/Brainstock/index.php?showforum=5')"/>
+				<menu id="dem" label="Department of Emergency Management">
+					<menupopup>
+						<menuitem id="services" label="DEM Services" tooltiptext="Public DEM forum" oncommand="urbandead_LoadURL(' http://s14.invisionfree.com/Brainstock/index.php?showforum=13')"/>
+						<menuitem id="join" label="Join the DEM" tooltiptext="Forum for joining one of the DEM groups" oncommand="urbandead_LoadURL(' http://s14.invisionfree.com/Brainstock/index.php?showforum=20')"/>
+						<menuitem id="demcat" label="DEM forums" tooltiptext="Department of Emergency Management" oncommand="urbandead_LoadURL(' http://s14.invisionfree.com/Brainstock/index.php?c=4')"/>
+					</menupopup>
+				</menu>
+			</menupopup>
+		</menu>
+
+		<menu id="resensitized" label="Resensitized Forum">
+			<menupopup>
+				<menuitem id="general" label="General Discussion" tooltiptext="Chatter relating to Urban Dead" oncommand="urbandead_LoadURL('http://zombies.dementiastudios.org/boards/index.php?board=1.0')"/>
+				<menuitem id="questions" label="Game Questions" tooltiptext="Not covered by the FAQ or the Wiki? Ask here" oncommand="urbandead_LoadURL('http://zombies.dementiastudios.org/boards/index.php?board=2.0')"/>
+				<menuitem id="suggest" label="Suggestions" tooltiptext="Discuss ideas for new game features" oncommand="urbandead_LoadURL('http://zombies.dementiastudios.org/boards/index.php?board=4.0')"/>
+				<menuitem id="udbugs" label="Bugs/Exploits" tooltiptext="Report problems with the game" oncommand="urbandead_LoadURL('http://zombies.dementiastudios.org/boards/index.php?board=3.0')"/>
+				<menuitem id="discussion" label="Site Discussion" tooltiptext="About the forum" oncommand="urbandead_LoadURL('http://zombies.dementiastudios.org/boards/index.php?board=5.0')"/>
+				<menuseparator/>
+
+				<menu id="ooc" label="Out of Character">
+					<menupopup>
+						<menuitem id="mall" label="At the Food Court" tooltiptext="OOC discussion for humans" oncommand="urbandead_LoadURL('http://zombies.dementiastudios.org/boards/index.php?board=6.0')"/>
+						<menuitem id="morgue" label="In the Graveyard" tooltiptext="OOC discussion for zombies" oncommand="urbandead_LoadURL('http://zombies.dementiastudios.org/boards/index.php?board=7.0')"/>
+						<menuitem id="recruit" label="Local Recruiting Station" tooltiptext="Looking for a group to join?" oncommand="urbandead_LoadURL('http://zombies.dementiastudios.org/boards/index.php?board=8.0')"/>		
+					</menupopup>
+				</menu>
+				<menuitem id="roleplay" label="Role-Playing" tooltiptext="Tell tales from the city" oncommand="urbandead_LoadURL('http://zombies.dementiastudios.org/boards/index.php?board=9.0')"/>
+			</menupopup>
+		</menu>
+	</menupopup>
+</toolbarbutton>
+
+<toolbarbutton id="udwiki" tooltiptext="Browse the Wiki"  type="menu" container="true">
+	<menupopup>
+		<menuitem id="browsewiki" label="Wiki Guide" oncommand="urbandead_LoadURL('http://wiki.urbandead.com/')"/>
+		<menuitem id="urbandeadfaq" label="FAQ" tooltiptext="In depth manual for the city of Malton" oncommand="urbandead_LoadURL('http://urbandead.com/faq.html')"/>
+		<menuitem id="urbandeadguide" label="Strategy Guides" tooltiptext="Tips from the veterans" oncommand="urbandead_LoadURL('http://wiki.urbandead.com/index.php/Guides')"/>
+	</menupopup>
+</toolbarbutton>
+
+<toolbarbutton id="udmap" tooltiptext="City Map of Malton"  oncommand="urbandead_LoadURL('http://redrum.soul-fantasy.net/map.php')"/>
+</toolbarpalette>
+
+<toolbox id="navigator-toolbox">
+<toolbar id="urbandead-toolbar" class="chromeclass-toolbar" context="toolbar-context-menu" toolbarname="UrbanDead Toolbar" customizable="false" hidden="false" inherits="collapsed,hidden" style="height:35px;" defaultset="udmainmenu,udwiki,udmap,udforum"/>
+</toolbox>
+</overlay>

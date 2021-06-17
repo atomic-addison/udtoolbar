@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
+<dialog id="udtoolbar-options" title="UDToolbar Settings" xmlns:html="http://www.w3.org/1999/xhtml" buttons="accept,cancel" ondialogaccept="return savegaieOptions();" ondialogcancel="return dogaieCancel();" onload="initgaieOptions()" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+	
+	<script type="application/x-javascript"	src="chrome://udinvgraphenhance/content/options.js"></script>
+<tabbox>
+	<tabs>
+		<tab label="General"/>
+	</tabs>
+
+	<tabpanels>
+		<tabpanel id="General">
+			<vbox>
+				<groupbox>
+					<caption label="General"/>
+					<checkbox id="gaieenable" label="Enable Extension" checked="true" />
+					<checkbox id="gaiemenus" label="Enable Pop-Up Menus" check="true" />
+					<checkbox id="gaiebrainrot" label="Hide Brain Rot on Skills Page" checked="false" />
+				</groupbox>
+
+				<groupbox style="width: 350px;">
+					<caption label="Appearance"/>
+					<checkbox id="gaiecssoverride" label="Enable Stylesheet Override" checked="true" />
+					<button id="gaiecssfile" label="Import Stylesheet" oncommand="selectGraphicsFile();" />
+					<checkbox id="gaieinventoryenable" label="Enable Graphical Inventory" checked="true" />
+					<checkbox id="gaiestatsenable" label="Enable Graphical Stats" checked="true" />
+					<checkbox id="gaienametableenable" label="Enable Name List Table" checked="true" />
+				</groupbox>
+			</vbox>
+			<vbox>
+				<groupbox style="width: 350px;">
+					<caption label="Map"/>
+					<checkbox id="gaiegraphic" label="Enable Map Graphics" checked="true" />
+					<checkbox id="gaieblockborders" label="Display Block Borders" checked="true" />
+					<checkbox id="gaiefixedmap" label="Enable Fixed Position Map" checked="true" />
+					<checkbox id="gaiehumancount" label="Show Survivor counts" checked="true" />
+					<checkbox id="gaiesuburblink" label="Enable Map Link on Suburb Name" checked="true" />
+				</groupbox>
+			</vbox>
+		</tabpanel>
+	</tabpanels>
+</tabbox>
+</dialog>

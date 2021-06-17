@@ -1,0 +1,13 @@
+#udmainmenu {
+    list-style-image: url("chrome://udinvgraphenhance/skin/udmenu.gif");
+}
+#udwiki {
+    list-style-image: url("chrome://udinvgraphenhance/skin/help.gif");
+}
+#udforum {
+    list-style-image: url("chrome://udinvgraphenhance/skin/forum.gif");
+}
+#udmap {
+    list-style-image: url("chrome://udinvgraphenhance/skin/citymap.gif");
+}
+

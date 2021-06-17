@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://udinvgraphenhance/skin/toolbar.css" type="text/css"?>
+<!DOCTYPE window SYSTEM "chrome://udinvgraphenhance/content/colorPicker/colorpicker.dtd">
+<overlay id="rainbowpickerOverlay"
+         xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+  <script type="application/x-javascript"
+          src="chrome://udinvgraphenhance/content/colorPicker/rainbowpickerOverlay.js" />
+  <stringbundleset id="stringbundleset">
+    <stringbundle src="chrome://udinvgraphenhance/content/colorPicker/rainbowpicker.properties"
+                  id="rainbowpickerStringBundle"/>
+  </stringbundleset>
+  <toolbarpalette id="BrowserToolbarPalette">
+    <toolbarbutton id="rainbowpickerToolbarbutton" class="toolbarbutton-1"
+      label="&rainbowpicker.toolbar.label;"
+      tooltiptext="&rainbowpicker.toolbar.tooltip;"
+      oncommand="rainbowpickerToolbar();"/>
+  </toolbarpalette>
+  <menupopup id="menu_ToolsPopup">
+    <menuitem insertbefore="sanitizeSeparator" id="rainbowpickerToolItem"
+              label="&rainbowpicker.toolbar.label;"
+              oncommand="rainbowpickerToolbar();"/>
+  </menupopup>
+</overlay>

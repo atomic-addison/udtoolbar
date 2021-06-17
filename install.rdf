@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<RDF:RDF xmlns:em="http://www.mozilla.org/2004/em-rdf#"
+         xmlns:NC="http://home.netscape.com/NC-rdf#"
+         xmlns:RDF="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  <RDF:Description RDF:about="rdf:#$Y51rG2"
+                   em:id="{ec8030f7-c20a-464f-9b0e-13a3a9e97384}"
+                   em:minVersion="1.5"
+                   em:maxVersion="3.0.*" />
+  <RDF:Description RDF:about="urn:mozilla:install-manifest"
+                   em:name="UDToolbar"
+                   em:id="{7BC5A936-2E6F-4d8a-BAB5-77C555E0AD71}"
+                   em:version="0.59"
+                   em:description="Graphical interface for UD"
+                   em:homepageURL="http://udtoolbar.mozdev.org"
+                   em:iconURL="chrome://udinvgraphenhance/skin/udtoolbar.gif"
+                   em:optionsURL="chrome://udinvgraphenhance/content/options.xul">
+    <em:creator>Slutthefeared, Tokujin, Equinoxx</em:creator>
+    <em:creator>Tokujin</em:creator>
+    <em:contributor>Slutthefeared (Main Programmer)</em:contributor>
+    <em:contributor>Tokujin (Coding Developer)</em:contributor>
+    <em:contributor>Equinnox (Computer Graphics Artist)</em:contributor>
+    <em:contributor>Special thanks to Ravenlord (Dobos Andras) for original extension</em:contributor>
+    <em:targetApplication RDF:resource="rdf:#$Y51rG2"/>
+    <em:file RDF:resource="urn:mozilla:extension:file:udinvgraphenhance.jar"/>
+  </RDF:Description>
+  <RDF:Description RDF:about="urn:mozilla:extension:file:udinvgraphenhance.jar"
+                   em:package="content/"
+                   em:skin="skin/" />
+</RDF:RDF>

@@ -1,0 +1,4 @@
+overlay	chrome://browser/content/browser.xul	chrome://udinvgraphenhance/content/browser.xul
+content	udinvgraphenhance	jar:chrome/udinvgraphenhance.jar!/content/
+content	udinvgraphenhance	jar:chrome/udinvgraphenhance.jar!/content/ contentaccessible=true
+skin	udinvgraphenhance	classic/1.0	jar:chrome/udinvgraphenhance.jar!/skin/

@@ -1,0 +1,15 @@
+pref("extensions.gaietool.isGAIEEnabled", true);
+pref("extensions.gaietool.isGAIEGEnabled", true);
+pref("extensions.gaietool.isGAIEMEnabled", true);
+pref("extensions.gaietool.isGAIEHCEnabled", true);
+pref("extensions.gaietool.UDCSSFilePath_", "");
+pref("extensions.gaietool.UDCSSFile_", "");
+pref("extensions.gaietool.GIAEHTMLFile", null);
+pref("extensions.gaietool.hideBrainRot", false);
+pref("extensions.gaietool.isGAIEMenusEnabled", true);
+pref("extensions.gaietool.isGAIEMBorders", false);
+pref("extensions.gaietool.isGAIEMFixed", true);
+pref("extensions.gaietool.isGAIEGInventory", true);
+pref("extensions.gaietool.isGAIEGStats", true);
+pref("extensions.gaietool.isGAIENameTable", true);
+pref("extensions.gaietool.isGAIESuburbLink", true);
